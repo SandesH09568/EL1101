@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'pages/notif.dart';
 import 'pages/profile.dart';
 import 'utils/routes.dart';
 
@@ -12,9 +13,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: MyRoutes.profileRoute,
+      initialRoute: MyRoutes.notifRoute,
       routes: {
-        "/": (context) => ProfilePage(),
+        "/": (context) => NotifPage(),
+        MyRoutes.profileRoute: (context) => ProfilePage(),
+        MyRoutes.notifRoute: (context) => NotifPage(),
       },
     );
   }

@@ -33,152 +33,831 @@ class _NotifPageState extends State<NotifPage> {
         ),
         actions: [],
         centerTitle: true,
-        elevation: 4,
       ),
       backgroundColor: Color(0xFFF5F5F5),
-      // floatingActionButton: FloatingActionButton.extended(
-      //   // onPressed: () {
-      //   //   moveToHome(context);
-      //   // },
-      //   backgroundColor: Colors.purple[900],
-      //   icon: Icon(
-      //     Icons.add_outlined,
-      //   ),
-      //   elevation: 8,
-      //   label: Text(
-      //     'Add Notice',
-      //     style: TextStyle(
-      //       fontFamily: 'Poppins',
-      //       color: Colors.white,
-      //     ),
-      //   ),
-      // ),
-      body: SafeArea(
-        child: GestureDetector(
-          onTap: () => FocusScope.of(context).unfocus(),
-          child: ListView(
-            padding: EdgeInsets.zero,
-            shrinkWrap: true,
-            scrollDirection: Axis.vertical,
-            children: [
-              Row(
+      body: GestureDetector(
+        onTap: () => FocusScope.of(context).unfocus(),
+        child: ListView(
+          padding: EdgeInsets.zero,
+          scrollDirection: Axis.vertical,
+          children: [
+            Padding(
+              padding: EdgeInsetsDirectional.fromSTEB(0, 2, 0, 0),
+              child: Row(
                 mainAxisSize: MainAxisSize.max,
                 children: [
-                  Container(
-                    width: MediaQuery.of(context).size.width,
-                    height: 100,
-                    decoration: BoxDecoration(
-                      color: Color(0xFFEEEEEE),
-                    ),
-                    child: ListTile(
-                      title: Text(
-                        'Notice 1',
-                        style: TextStyle(fontSize: 18),
+                  Padding(
+                    padding: EdgeInsetsDirectional.fromSTEB(0, 2, 0, 2),
+                    child: Material(
+                      color: Colors.transparent,
+                      elevation: 0,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(20),
                       ),
-                      subtitle: Text(
-                        'ERP Notice',
-                        style: TextStyle(fontSize: 16),
+                      child: Container(
+                        width: MediaQuery.of(context).size.width,
+                        height: 155,
+                        decoration: BoxDecoration(
+                          color: Color(0xFFFFFFFF),
+                          borderRadius: BorderRadius.circular(20),
+                          shape: BoxShape.rectangle,
+                          border: Border.all(
+                            color: Colors.black,
+                            width: 2.6,
+                          ),
+                        ),
+                        child: Column(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(15, 8, 0, 0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Text(
+                                    'Admin',
+                                    style: TextStyle(
+                                      fontFamily: 'Poppins',
+                                      fontWeight: FontWeight.w900,
+                                      fontSize: 20,
+                                      color: Colors.blue[500],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(16, 2, 0, 0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Text(
+                                    'Date: 21st August 2022',
+                                    style: TextStyle(
+                                      fontFamily: 'Poppins',
+                                      color: Colors.black,
+                                      fontSize: 14,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(10, 8, 8, 0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        8, 0, 0, 0),
+                                    child: Text(
+                                      'The University stands for humanism and tolerance, for reason, \nfor adventure of ideas and for the search\nof .....',
+                                      style: TextStyle(
+                                        fontFamily: 'Poppins',
+                                        color: Colors.grey[700],
+                                        fontSize: 12,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Padding(
+                                    padding: EdgeInsetsDirectional.fromSTEB(
+                                        280, 0, 0, 0),
+                                    child: TextButton(
+                                      onPressed: () {},
+                                      child: Text("Read more"),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
                       ),
-                      trailing: Icon(
-                        Icons.arrow_forward_ios,
-                        color: Color(0xFF303030),
-                        size: 20,
-                      ),
-                      tileColor: Color(0xFFF5F5F5),
-                      dense: false,
                     ),
                   ),
                 ],
               ),
-              Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Container(
+            ),
+            Row(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 2),
+                  child: Container(
                     width: MediaQuery.of(context).size.width,
-                    height: 100,
+                    height: 155,
                     decoration: BoxDecoration(
-                      color: Color(0xFFEEEEEE),
+                      color: Color(0xFFFFFFFF),
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        width: 2.6,
+                      ),
                     ),
-                    child: ListTile(
-                      title: Text(
-                        'Notice 2',
-                        style: TextStyle(fontSize: 18),
-                      ),
-                      subtitle: Text(
-                        'ERP Notice',
-                        style: TextStyle(fontSize: 16),
-                      ),
-                      trailing: Icon(
-                        Icons.arrow_forward_ios,
-                        color: Color(0xFF303030),
-                        size: 20,
-                      ),
-                      tileColor: Color(0xFFF5F5F5),
-                      dense: false,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(15, 8, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Text(
+                                'ERP Admin',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.w900,
+                                  fontSize: 20,
+                                  color: Colors.blue[500],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(16, 2, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Text(
+                                'Date: 21st August 2022',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(10, 8, 8, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(8, 0, 0, 0),
+                                child: Text(
+                                  'The University stands for humanism and tolerance, for reason, \nfor adventure of ideas and for the search\nof .....',
+                                  style: TextStyle(
+                                    fontFamily: 'Poppins',
+                                    color: Colors.grey[700],
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    280, 0, 0, 0),
+                                child: TextButton(
+                                  onPressed: () {},
+                                  child: Text("Read more"),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(240, 0, 0, 0),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                   ),
-                ],
-              ),
-              Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Container(
+                ),
+              ],
+            ),
+            Row(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 2),
+                  child: Container(
                     width: MediaQuery.of(context).size.width,
-                    height: 100,
+                    height: 155,
                     decoration: BoxDecoration(
-                      color: Color(0xFFEEEEEE),
+                      color: Color(0xFFFFFFFF),
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        width: 2.6,
+                      ),
                     ),
-                    child: ListTile(
-                      title: Text(
-                        'Notice 3',
-                        style: TextStyle(fontSize: 18),
-                      ),
-                      subtitle: Text(
-                        'ERP Notice',
-                        style: TextStyle(fontSize: 16),
-                      ),
-                      trailing: Icon(
-                        Icons.arrow_forward_ios,
-                        color: Color(0xFF303030),
-                        size: 20,
-                      ),
-                      tileColor: Color(0xFFF5F5F5),
-                      dense: false,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(15, 8, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Text(
+                                'IT Dept.',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.w900,
+                                  fontSize: 20,
+                                  color: Colors.blue[500],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(16, 2, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Text(
+                                'Date: 21st August 2022',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(10, 8, 8, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(8, 0, 0, 0),
+                                child: Text(
+                                  'The University stands for humanism and tolerance, for reason, \nfor adventure of ideas and for the search\nof .....',
+                                  style: TextStyle(
+                                    fontFamily: 'Poppins',
+                                    color: Colors.grey[700],
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    280, 0, 0, 0),
+                                child: TextButton(
+                                  onPressed: () {},
+                                  child: Text("Read more"),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(240, 0, 0, 0),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                   ),
-                ],
-              ),
-              Row(
-                mainAxisSize: MainAxisSize.max,
-                children: [
-                  Container(
+                ),
+              ],
+            ),
+            Row(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 2),
+                  child: Container(
                     width: MediaQuery.of(context).size.width,
-                    height: 100,
+                    height: 155,
                     decoration: BoxDecoration(
-                      color: Color(0xFFEEEEEE),
+                      color: Color(0xFFFFFFFF),
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        width: 2.6,
+                      ),
                     ),
-                    child: ListTile(
-                      title: Text(
-                        'Notice 4',
-                        style: TextStyle(fontSize: 18),
-                      ),
-                      subtitle: Text(
-                        'ERP Notice',
-                        style: TextStyle(fontSize: 16),
-                      ),
-                      trailing: Icon(
-                        Icons.arrow_forward_ios,
-                        color: Color(0xFF303030),
-                        size: 20,
-                      ),
-                      tileColor: Color(0xFFF5F5F5),
-                      dense: false,
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(15, 8, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Text(
+                                'Comp. Dept.',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.w900,
+                                  fontSize: 20,
+                                  color: Colors.blue[500],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(16, 2, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Text(
+                                'Date: 21st August 2022',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(10, 8, 8, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(8, 0, 0, 0),
+                                child: Text(
+                                  'The University stands for humanism and tolerance, for reason, \nfor adventure of ideas and for the search\nof .....',
+                                  style: TextStyle(
+                                    fontFamily: 'Poppins',
+                                    color: Colors.grey[700],
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    280, 0, 0, 0),
+                                child: TextButton(
+                                  onPressed: () {},
+                                  child: Text("Read more"),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(240, 0, 0, 0),
+                            ),
+                          ],
+                        ),
+                      ],
                     ),
                   ),
-                ],
-              ),
-            ],
-          ),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 2),
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 155,
+                    decoration: BoxDecoration(
+                      color: Color(0xFFFFFFFF),
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        width: 2.6,
+                      ),
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(15, 8, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Text(
+                                'Civil Dept.',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.w900,
+                                  fontSize: 20,
+                                  color: Colors.blue[500],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(16, 2, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Text(
+                                'Date: 21st August 2022',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(10, 8, 8, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(8, 0, 0, 0),
+                                child: Text(
+                                  'The University stands for humanism and tolerance, for reason, \nfor adventure of ideas and for the search\nof .....',
+                                  style: TextStyle(
+                                    fontFamily: 'Poppins',
+                                    color: Colors.grey[700],
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    280, 0, 0, 0),
+                                child: TextButton(
+                                  onPressed: () {},
+                                  child: Text("Read more"),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(240, 0, 0, 0),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 2),
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 155,
+                    decoration: BoxDecoration(
+                      color: Color(0xFFFFFFFF),
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        width: 2.6,
+                      ),
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(15, 8, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Text(
+                                'Mech. Dept.',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.w900,
+                                  fontSize: 20,
+                                  color: Colors.blue[500],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(16, 2, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Text(
+                                'Date: 21st August 2022',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(10, 8, 8, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(8, 0, 0, 0),
+                                child: Text(
+                                  'The University stands for humanism and tolerance, for reason, \nfor adventure of ideas and for the search\nof .....',
+                                  style: TextStyle(
+                                    fontFamily: 'Poppins',
+                                    color: Colors.grey[700],
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    280, 0, 0, 0),
+                                child: TextButton(
+                                  onPressed: () {},
+                                  child: Text("Read more"),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(240, 0, 0, 0),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 2),
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 155,
+                    decoration: BoxDecoration(
+                      color: Color(0xFFFFFFFF),
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        width: 2.6,
+                      ),
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(15, 8, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Text(
+                                'Sports Dept.',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.w900,
+                                  fontSize: 20,
+                                  color: Colors.blue[500],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(16, 2, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Text(
+                                'Date: 21st August 2022',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(10, 8, 8, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(8, 0, 0, 0),
+                                child: Text(
+                                  'The University stands for humanism and tolerance, for reason, \nfor adventure of ideas and for the search\nof .....',
+                                  style: TextStyle(
+                                    fontFamily: 'Poppins',
+                                    color: Colors.grey[700],
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    280, 0, 0, 0),
+                                child: TextButton(
+                                  onPressed: () {},
+                                  child: Text("Read more"),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(240, 0, 0, 0),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Row(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Padding(
+                  padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 20),
+                  child: Container(
+                    width: MediaQuery.of(context).size.width,
+                    height: 155,
+                    decoration: BoxDecoration(
+                      color: Color(0xFFFFFFFF),
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(
+                        width: 2.6,
+                      ),
+                    ),
+                    child: Column(
+                      mainAxisSize: MainAxisSize.max,
+                      children: [
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(15, 8, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Text(
+                                'T&P Dept.',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  fontWeight: FontWeight.w900,
+                                  fontSize: 20,
+                                  color: Colors.blue[500],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(16, 2, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Text(
+                                'Date: 21st August 2022',
+                                style: TextStyle(
+                                  fontFamily: 'Poppins',
+                                  color: Colors.black,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(10, 8, 8, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding:
+                                    EdgeInsetsDirectional.fromSTEB(8, 0, 0, 0),
+                                child: Text(
+                                  'The University stands for humanism and tolerance, for reason, \nfor adventure of ideas and for the search\nof .....',
+                                  style: TextStyle(
+                                    fontFamily: 'Poppins',
+                                    color: Colors.grey[700],
+                                    fontSize: 12,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Padding(
+                          padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.max,
+                            children: [
+                              Padding(
+                                padding: EdgeInsetsDirectional.fromSTEB(
+                                    280, 0, 0, 0),
+                                child: TextButton(
+                                  onPressed: () {},
+                                  child: Text("Read more"),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Row(
+                          mainAxisSize: MainAxisSize.max,
+                          children: [
+                            Padding(
+                              padding:
+                                  EdgeInsetsDirectional.fromSTEB(240, 0, 0, 0),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
