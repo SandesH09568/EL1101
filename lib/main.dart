@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// import 'pages/noteview.dart';
 import 'pages/notif.dart';
 import 'pages/profile.dart';
 import 'utils/routes.dart';
@@ -18,6 +19,7 @@ class MyApp extends StatelessWidget {
         "/": (context) => NotifPage(),
         MyRoutes.profileRoute: (context) => ProfilePage(),
         MyRoutes.notifRoute: (context) => NotifPage(),
+        // MyRoutes.noteviewRoute: (context) => NoteviewPage(),
       },
     );
   }
