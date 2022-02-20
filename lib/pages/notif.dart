@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_application_4/utils/routes.dart';
-// import 'package:flutter_catalog/utils/routes.dart';
 
 class NotifPage extends StatefulWidget {
-  // NotifPage({Key? key}) : super(key: key);
-
   @override
   State<NotifPage> createState() => _NotifPageState();
 }
